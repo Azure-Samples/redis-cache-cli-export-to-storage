@@ -66,7 +66,7 @@ Error: Report SAS URIs poorly formatted.
 <img src="https://github.com/zhangdingsong/ExportRedisViaAzureCLI/raw/master/SASError_Ink_LI.jpg">
 
 The root cause of this issue: 
-### 1. colon mark ":" need to escaped before use here as an parameter. You can see the only difference is escaped charactor.
+### 1. Colon mark ":" need to escaped before use here as an parameter. You can see the only difference is escaped charactor.
  - Azure Portal generated SAS token
 ```shell
      sv=2015-12-11&ss=bfqt&srt=sco&sp=rwdlacup&se=2017-05-31T21:51:24Z&st=2017-01-09T13:51:24Z&spr=https,http&sig=llWaJ2TtAJWIhpm3j7PKead8%2BuHXp1IRUs4G%2B5dYcsQ%3D
@@ -77,7 +77,7 @@ The root cause of this issue:
      st=2017-01-09T06%3A22%3A00Z&se=2017-01-20T06%3A22%3A00Z&sp=rwdl&sv=2015-04-05&sr=c&sig=GUuS3DZzZufB4y8OJR8%2FIrcSxbIZle10gEMqrhNMNsA%3D
 ```
 
-### 2. long parameter should cupping by double quotation marks.
+### 2. Long parameter should cupping by double quotation marks.
 
 ## Reference
 Below are some useful links, you will need them before your real action.
