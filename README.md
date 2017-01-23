@@ -34,26 +34,26 @@ You need an Azure account. You can [open a free Azure account](https://azure.mic
 [Install Azure CLI 2.0 (Preview)](https://docs.microsoft.com/en-us/cli/azure/install-az-cli2) on whatever platform you use. Azure CLI 2.0 is in preview and it works only with the resource manager deployment model. You can also install Azure CLI, which is released and works with all services.
 
 ## Detailed Steps
-### 1.	From any platform you have Azure CLI installed, run **az** with no arguments to verify the installation. 
+1.	From any platform you have Azure CLI installed, run **az** with no arguments to verify the installation. 
     You should get a page like this:
     <img src="https://github.com/zhangdingsong/ExportRedisViaAzureCLI/raw/master/az.jpg">
-### 2.	Run the login command.
+2.	Run the login command.
     <img src="https://github.com/zhangdingsong/ExportRedisViaAzureCLI/raw/master/azlogin.jpg">
     You'll be prompted to open https://aka.ms/devicelogin and enter a code.
-### 3.	Use a web browser to open the page https://aka.ms/devicelogin and enter the code to authenticate.
+3.	Use a web browser to open the page https://aka.ms/devicelogin and enter the code to authenticate.
     You'll be prompted to log in using your credentials.
-### 4.	Log in.
+4.	Log in.
     Now you can run any command that accesses your account.
-### 5.	 Run command **az redis export**
+5.	 Run command **az redis export**
      Parameters we need to notice: 
-     * --container: blob storage container full path name with SAS token.
-     Note: characters like colon mark ":" must be escaped, there always failed with errors if SAS token is not ser properly. (you can generage valid SAS token through **Azure Storage Explorer**)
-     Please check Common Error section for details. 
-     * --prefix:  any prefix name you preferred for output file.
-     * --file-format: we can set to rdb as default
-     * --ids: resource ID of Redis service. 
+     - --container: blob storage container full path name with SAS token.
+       - Note: characters like colon mark ":" must be escaped, there always failed with errors if SAS token is not ser properly. (you can generage valid SAS token through **Azure Storage Explorer**)
+       - Please check Common Error section for details. 
+     - --prefix:  any prefix name you preferred for output file.
+     - --file-format: we can set to rdb as default
+     - --ids: resource ID of Redis service. 
      if provided, then no need to specify 
-     * --name-n parameter.
+     - --name-n parameter.
      
 Example: 
 ```shell
